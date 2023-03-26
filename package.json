@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "socker.io": "^0.0.0-alpha-beta",
+    "socket.io": "^4.6.1"
+  },
+  "name": "3-in-a-row-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acoini/3-in-a-row-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acoini/3-in-a-row-server/issues"
+  },
+  "homepage": "https://github.com/Acoini/3-in-a-row-server#readme",
+  "description": ""
+}
