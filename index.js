@@ -6,12 +6,9 @@ const io = new Server({
   }
 });
 
-let numConnections = 0
 let id = "12345"
 
 io.on("connection", (socket) => {
-  numConnections++
-  console.log("connections: " + numConnections)
   
   socket.on("game", arg => {
     console.log(arg); // world
