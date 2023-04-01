@@ -7,7 +7,7 @@ const io = new Server({
 });
 
 let numConnections = 0
-let id = "JeyasIj101KJa"
+let id = "12345"
 
 io.on("connection", (socket) => {
   numConnections++
