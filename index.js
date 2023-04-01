@@ -1,18 +1,30 @@
 const { Server } = require("socket.io");
 
-const io = new Server();
-
-let numConnections = 0
-
-io.on("connection", (socket) => {
-    console.log(socket)
-    numConnections++
-
-    socket.on("hello", (arg) => {
-        console.log(arg); // world
-      });
-
-    console.log("connections: " + numConnections)
+const io = new Server({
+  cors: {
+    orgin: "*"
+  }
 });
 
-io.listen(3000);
+let numConnections = 0
+let id = "JeyasIj101KJa"
+
+io.on("connection", (socket) => {
+  numConnections++
+  console.log("connections: " + numConnections)
+  
+  socket.on("game", arg => {
+    console.log(arg); // world
+  });
+
+  socket.on(id, arg => {
+    socket.emit(arg)
+  })
+
+  socket.on("queue", arg => {
+    socket.emit("game", "here is your shit: " + arg)
+  });
+
+});
+
+io.listen(5000);
