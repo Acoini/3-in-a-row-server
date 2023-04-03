@@ -30,6 +30,7 @@ const checkForWinner = (data) => {
   return null;
 }
 
+// Current game board state
 let gameState = ['', '', '', '', '', '', '', '', ''];
 
 io.on("connection", (socket) => {
