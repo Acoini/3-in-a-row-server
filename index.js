@@ -14,10 +14,10 @@ const io = new Server({
  * if the count is greater than 2, it means there is a winner returning
  * true, any ways it returns false.
  * */
-const isThereAWinner = (data) => {
+const checkForWinner = (data) => {
 	return 0
+  p
 }
-
 
 io.on("connection", (socket) => {
   
